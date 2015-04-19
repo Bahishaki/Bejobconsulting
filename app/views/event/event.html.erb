@@ -1,0 +1,328 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+  <title> JOB DATABASE </title>
+
+      <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/modern-business.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+  <script type="text/javascript">    
+  function toggle_div_fun(id) {      
+      var divelement = document.getElementById(id);       
+      if(divelement.style.display == 'block')          
+              divelement.style.display = 'none';       
+              else          
+                divelement.style.display = 'block';    
+            }
+  </script>
+
+  <script type="text/javascript">    
+  function toggle_div_fun(id) {      
+      var divelement = document.getElementById(id);       
+      if(divelement.style.display == 'block')          
+              divelement.style.display = 'none';       
+              else          
+                divelement.style.display = 'block';    
+            }
+  </script>
+
+    <script type="text/javascript">    function toggle_div_fun(id) {      
+      var divelement = document.getElementById(id);       
+      if(divelement.style.display == 'block')          
+              divelement.style.display = 'none';       
+              else          
+                divelement.style.display = 'block';    
+            }
+  </script>
+
+<style type="text/css">
+
+
+.centerDiv {
+  display: block;
+  width: 400px;
+  margin: 0 auto 0 auto;
+  padding:10px; 
+  background:#f0f0f0;
+  display:none;
+}
+#content {
+  width: 900px;
+  margin: 0 auto 0 auto;
+}
+
+.btn {
+  padding: 10px;
+  border: 1px solid black;
+  cursor: pointer;
+  width: 200px;
+}
+
+h1 {  
+  color: orange;
+  text-align: center;
+  padding: 0 auto;
+}
+
+h2 {  
+  color: orange;
+  text-align: left;
+  padding: 0 auto;
+}
+
+.footer {
+  width: 900px;
+  margin: 0 auto 0 auto;
+  color: black;
+}
+#Select {
+  width: 900px;
+  margin: 0 auto 0 auto;
+}
+
+select{
+  width: 300px;
+  margin: 0 auto 0 auto;
+}
+
+#evenement {
+  padding: 10px;
+  border: 1px solid black;
+  cursor: pointer;
+  width: 200px;
+}
+
+#contrat {
+  padding: 10px;
+  border: 1px solid black;
+  cursor: pointer;
+  width: 200px;
+}
+
+#region {
+  padding: 10px;
+  border: 1px solid black;
+  cursor: pointer;
+  width: 200px;
+}
+
+
+
+  </style>
+
+
+</head>
+
+
+<body>
+
+      <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/"> BeJobConsulting </a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="employeur.html"> Employers </a>
+                    </li>
+                    <li>
+                        <a href="candidat.html"> Sign In </a>
+                    </li>
+
+                    
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+<h1> EVENTS </h1>
+<div id="Select">   
+  <h2> Event Search </h2>
+     <p> <div class="selectevenement">
+              <p id="evenement" class="evenement"> <strong> Type of Events </strong></p>    
+              <select>
+                <option value="Formation"> Training </option>
+                <option value="jobfair"> Job Fair </option>
+                <option value="Networking"> Networking </option>
+                <option value="businessgame"> Business Games  </option>
+                <option value="selection"> Selection Days </option>
+              </select>
+          </div>
+     </p>
+      <p> <div class="selectcontrat">
+              <p id="contrat" class="contrat"> <strong> Function </strong></p>    
+              <select>
+                <option value="Audit">Audit</option>
+                <option value="Finance">Finance</option>
+                <option value="IT">IT</option>
+                <option value="Consulting">Consulting </option>
+              </select>
+          </div>
+     </p>
+      <p> <div class="selectregion">
+              <p id="region" class="region"> <strong> Régions</strong></p>    
+              <select>
+                <option value="Audit"> Flandre</option>
+                <option value="Finance"> Bruxelles </option>
+                <option value="IT"> Wallonie </option>
+              </select>
+          </div>
+     </p>
+
+</div>
+
+  <div id="content">
+
+  
+    <h2> Quick Access </h2>
+
+    <button onclick="toggle_div_fun('sectionaudit');" class="btn"> Audit </button>
+    <br /><br />
+    <div id="sectionaudit" class="centerDiv">  <p> PWC </p> <p> EY </p> <p> KPMG </p> <p> Deloitte </p> </div>
+    <hr>
+
+    <button onclick="toggle_div_fun('sectionIT');" class="btn"> IT </button> 
+    <br /><br />
+    <div id="sectionIT" class="centerDiv"> <p> IBM </p> <p> CapGemini </p> <p> CSC </p> <p> Accenture </p></div>
+    <hr>
+
+    <button onclick="toggle_div_fun('sectionfinance');" class="btn"> Finance </button> 
+    <br /><br />
+    <div id="sectionfinance" class="centerDiv"> <p> BNP Parisbas </p> <p> Belfius </p> <p> ING  </p> </div>
+    <hr>
+    <footer>
+      <div>
+        <span style="text-align: left" padding="20px">
+            <a href="about.html"> About Us </a>
+        </span>
+        <span style="text-align: right">
+            <a href="mentionleg.html"> Privacy Policy </a>
+        </span>
+         <span style="text-align: center">
+            <a href="#"> Copyright Policy</a>
+        </span>
+      </div>
+    </footer>
+
+  </div>
+
+
+
+
+
+</body>
+</html>
+
+
+<!--
+<!DOCTYPE html>
+<html>
+<head>
+
+<script type="text/javascript">
+      function toggle_div_fun(id) {
+        var divelement = document.getElementById(id);
+
+        if(divelement.style.display == 'none')
+            divelement.style.display = 'block';
+          else divelement.style.display = 'none';
+      }
+</script>
+</head>
+<body>
+
+<button onclick="toggle_div_fun('sectionhide');">Audit</button> PWC EY DELOITTE KPMG
+<br /> <br />
+
+<div id="sectiontohide"> This is the thing with id=sectionID</div>
+</body>
+
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js">
+</script>
+<script>
+$(document).ready(function(){
+  $("#hide").click(function(){
+    $("p").hide();
+  });
+  $("#show").click(function(){
+    $("p").show();
+  });
+});
+</script>
+</head>
+<body>
+
+<button id="hide">Hide</button>
+<button id="show">Show</button>
+<p style="display:none">If you click on the "Hide" button, I will disappear.</p>
+
+</body>
+
+
+</html>
+
+
+
+
+<!--
+<ul class="nav nav-pills nav-stacked">
+
+  <p style="display:none">If you click on the "Hide" button, I will disappear.</p>
+
+  <li role="presentation" class="Active">
+      <a href="#">Home</a></li>
+
+  <li role="presentation">
+      <a href="#">Profile</a></li>
+
+  <li role="presentation">
+      <a href="#">Messages</a></li>
+</ul>
+
